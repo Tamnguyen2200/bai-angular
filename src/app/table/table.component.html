@@ -1,0 +1,29 @@
+<table id="List_report">
+    <tr>
+        <th class="fonttext">Mã</th>
+        <th class="fonttext">Tên đối báo cáo</th>
+        <th class="fonttext">Mô tả</th>
+        <th > </th>
+    </tr>
+    <tr *ngFor="let data of listdata | appFilter: tableService.filterName" class="back-White">
+        <th class="fonttext data">{{data.reportId}}</th>
+        <th id="name">{{data.reportName}}</th>
+        <th class="fonttext data fontweight">{{data.reportDecription}}</th>
+        <th class="Event">
+            <label for="{{data.reportId}}"  class="option_item">
+                <input type="checkbox" class="checkbox" name="" id="{{data.reportId}}">
+                <div class="tick_doticon">
+                    <i class="fa-solid fa-ellipsis custom"></i>
+                    <div class="">
+                        <div class="box-item">
+                            <mat-icon svgIcon="xlsx"></mat-icon>
+                            <button class="custombtn" (click)="dialogService.OpenDialog(false)">Xuất ra Excel</button> 
+                        </div>
+                    </div>  
+                </div>
+            </label>
+        </th>
+    </tr>
+</table>
+<app-dialog *ngIf="dialogService.isdisplay" ></app-dialog>
+

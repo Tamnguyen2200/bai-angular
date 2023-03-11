@@ -1,0 +1,36 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.left-side{
+    background-color:  #5A6276;
+    color: #ffffff;
+    font-family: 'Mulish';
+    min-height: 900px;
+    min-width: 280px;
+    padding-top: 55px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    height: 50px;
+}
+.colorDrak{
+    background-color: rgba(26, 35, 52, 1);
+} 
+.pading16px{
+    padding-left: 16px;
+    font-weight: 700;
+}
+.line-white{
+    height: 50px;
+    width: 5px;
+    background-color: #ffffff;
+    margin-right: 18px;
+}
+.box{
+    margin-left: 22px;
+}

@@ -1,0 +1,101 @@
+.dialog{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(196, 196, 196, 0.4);
+    transition: opacity linear 0.2s;
+} 
+.no{
+    text-decoration: none;
+    color: #ffffff;
+}
+.dialog-body{
+    width: 500px;
+    background-color: #ffffff;
+    color: black;
+    z-index: 5;
+    border-radius: 5px;
+    border-radius: 10px;
+    font-family: 'Mulish';
+    
+}
+.headder{
+    background-image: linear-gradient(315deg, #008000 0%, #63C204 100%);
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 600;
+}
+.contentdialog{
+    padding: 50px 30px;
+    align-items: center;
+}
+.custonbtm{
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(0, 128, 0, 1);
+    background-color: #ffffff;
+    color: rgba(0, 128, 0, 1);
+    margin: 0 20px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+input[type='number']{
+    font-size: 13px;
+    padding: 5px 3px;
+    width: 100px;
+    margin: 0 55px;
+}
+.btn{
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.conten{
+    display: flex;
+    text-align: center;
+    padding: 5px 10px;
+}
+.conten p{
+    padding-left: 45px;
+    font-weight: 700;
+    color: #959DB3;
+}
+.dialog-close-btn{
+    text-decoration: none;
+    color: rgba(0, 128, 0, 1);
+}
+.custonbtm:hover{
+    background-color: #008000;
+    color: #ffffff;
+}
+.custonbtm .dialog-close-btn:hover{
+    color: #ffffff;
+}
+.nonedisplay{
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    background-color: #BDC2D2;
+    color: #ffffff;
+    align-items: start;
+    margin-left: -165px;
+    margin-top: -5px;
+    z-index: 1;
+    height: 80px;
+    display: none;
+}  
+.ma{
+    margin-left: 70px;
+}
+.pading{
+    margin-left: 128px;
+}

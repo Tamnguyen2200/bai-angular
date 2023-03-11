@@ -1,0 +1,94 @@
+table{
+    width: 99.5%;
+    margin: 10px 5px 0 5px;
+    border-collapse: collapse;
+}
+#List_report{
+    font-family: 'Mulish';
+}
+th{
+    text-align: left;
+    margin-left: 5px;
+    border: none;
+    padding: 10px;
+}
+.fonttext{
+    color: #5A6276;
+}
+tr{
+    height: 30px;
+}
+.back-White{
+    background-color: #ffff;
+    border: none;
+}
+table, th, td{
+    border-top:10px solid #EDEFF3;
+    border-bottom:10px solid #EDEFF3;
+}
+.tick_doticon{
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 3px;
+   
+}
+
+.box-item{
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    background-color: #BDC2D2;
+    color: #ffffff;
+    align-items: center;
+    margin-left: -115px;
+    z-index: 1;
+    display: flex;
+    margin-top: -5px;
+    justify-content: space-around;
+    display: none;
+}
+.option_item{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    align-items: center;
+    text-align: center;    
+}
+.option_item .checkbox{
+    position: absolute;
+    opacity: 0;
+}
+.option_item .tick_doticon{
+    text-align: center;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+}
+.option_item .checkbox:checked ~ .tick_doticon{
+    background-color: #BDC2D2;
+}
+.option_item .checkbox:checked ~ .tick_doticon .custom{
+    color: #ffffff;
+}
+.option_item .checkbox:checked ~ .tick_doticon .box-item{
+    display: block;
+    display: flex;
+}
+.custom{
+    font-size: 25px;
+    color: #959DB3;
+    padding: 5px 0;
+}
+.custombtn{
+    border: none;
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-weight: 400;
+}

@@ -1,0 +1,60 @@
+.search{
+    font-family: 'Mulish';
+    margin-top: 25px;
+}
+.describe{
+    display: flex;
+}
+.describe p{
+    font-weight: 700;
+}
+.describe .padding8px{
+    padding: 0 32px 0 8px;
+    color: #5A6276;
+    width: 10rem;
+}
+.describe .fonts{
+    color: #959DB3;
+}
+.searchbar{
+    margin-top: 5px;
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+}
+.searchbar a{
+    color: #008000;
+    text-decoration: underline;
+    width: 8rem;
+}
+input[type='text']{
+    width: 380px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 35px;
+    position: relative;
+}
+input[type=text]:focus {
+    border: 2px solid #008000;
+  }
+.position{
+    position: absolute;
+    margin-left: 135px;
+    z-index: 1;
+}
+.searchbar button{
+    align-items: center;
+    text-align: center;
+    margin-left: 8px;
+    display: flex;
+    height: 35px;
+    width: 60px;
+    background-color: #008000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+.searchbar button mat-icon{
+    padding-left: 5px;
+}
