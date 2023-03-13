@@ -14,6 +14,8 @@ import { TableComponent } from './table/table.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { AppRoutingModule } from './Route/app-routing.module';
+import { ImportPageComponent } from './import-page/import-page.component';
+import { ReportPageComponent } from './report-page/report-page.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { AppRoutingModule } from './Route/app-routing.module';
     TableComponent,
     DialogComponent,
     FilterPipe,
+    ImportPageComponent,
+    ReportPageComponent
   ],
   imports: [
     BrowserModule,

@@ -17,14 +17,32 @@ body{
     position: relative;
 }
 .right{
-    margin-left: 10px;
+    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    left: 288px;
 }
 .line{
     min-width: 1200px;
     border: 1px solid #BDC2D2;
     margin-top: 12px;
+}
+.fixleftmenu{
+    position: fixed;
+}
+.fixmenutop{
+    position: fixed;
+    z-index: 5;
+}
+.datatable{
+    position: absolute;
+    top: 40px;
+}
+.contentTable{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    z-index: -5;
 }

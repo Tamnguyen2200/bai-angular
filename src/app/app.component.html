@@ -1,9 +1,14 @@
+
 <div class="content">
-    <app-leftbarside></app-leftbarside>
+    <app-leftbarside class="fixleftmenu"></app-leftbarside>
      <div class="right">
-        <app-menubar></app-menubar>
-        <app-searchbar></app-searchbar>
-        <div class="line"></div>
-        <app-table></app-table>
+        <app-menubar class="fixmenutop"></app-menubar>
+        <div class="datatable">
+            <router-outlet>
+                <!-- <app-searchbar></app-searchbar>
+                <div class="line"></div>
+                <app-table></app-table> -->
+            </router-outlet>
+        </div>
     </div>  
 </div>  
