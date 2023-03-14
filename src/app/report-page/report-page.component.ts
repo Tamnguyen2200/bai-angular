@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { SearchbarComponent } from '../searchbar/searchbar.component';
-import { TableComponent } from '../table/table.component';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-report-page',
@@ -8,5 +9,18 @@ import { TableComponent } from '../table/table.component';
   styleUrls: ['./report-page.component.css']
 })
 export class ReportPageComponent {
+  constructor(
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer,
 
+  ){
+    this.matIconRegistry.addSvgIcon(
+      'fillter',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/SVGimg/fillter.svg')
+    ),
+    this.matIconRegistry.addSvgIcon(
+      'Search_icon_white',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/SVGimg/Search_icon_white.svg')
+    )
+  }
 }

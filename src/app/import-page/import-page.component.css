@@ -1,0 +1,26 @@
+.with{
+    min-width: 1225px;
+}
+.line{
+    min-width: 1200px;
+    border: 1px solid #BDC2D2;
+    margin-top: 12px;
+}
+.search{
+    font-family: 'Mulish';
+    margin-top: 25px;
+}
+.describe{
+    display: flex;
+}
+.describe p{
+    font-weight: 700;
+}
+.describe .padding8px{
+    padding: 0 32px 0 8px;
+    color: #5A6276;
+    width: 10rem;
+}
+.describe .fonts{
+    color: #959DB3;
+}

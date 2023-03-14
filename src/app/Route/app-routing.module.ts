@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ReportPageComponent } from '../report-page/report-page.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/reportPage', pathMatch: 'full' },
   { path: 'importPage', component: ImportPageComponent },
   { path: 'reportPage', component: ReportPageComponent }
 ];

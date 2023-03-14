@@ -1,13 +1,7 @@
-<div class="search">
-    <div class="describe">
-        <mat-icon svgIcon="fillter"></mat-icon>
-        <p class="padding8px">LỌC DỮ LIỆU</p>
-        <P class="fonts">Tìm kiếm báo cáo</P>
-    </div>
-    <div class="searchbar">
-        <a (click) = "tableSevice.clear()">Reset bộ lọc</a> 
-        <input type="text" placeholder="Tìm theo tên báo cáo, mô tả báo cáo" [(ngModel)]="tableSevice.filterName" name="filterName">
-        <mat-icon class="position" svgIcon="Search_icon"></mat-icon>
-        <button (click)="tableSevice.search()"><mat-icon svgIcon="Search_icon_white"></mat-icon> Tìm</button>
-    </div>
+
+<div class="searchbar">
+    <a (click) = "tableSevice.clear()">Reset bộ lọc</a> 
+    <input type="text" placeholder="Tìm theo tên báo cáo, mô tả báo cáo" (change)="filterNameChange()" [(ngModel)]="filterName" name="filterName">
+    <mat-icon class="position" svgIcon="Search_icon"></mat-icon>
+    <button (click)="tableSevice.search()"><mat-icon svgIcon="Search_icon_white"></mat-icon> Tìm</button>
 </div>

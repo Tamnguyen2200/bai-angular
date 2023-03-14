@@ -46,3 +46,12 @@ body{
     background-color: aqua;
     z-index: -5;
 }
+.custom{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 650px;
+    justify-content: space-around;
+}

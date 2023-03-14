@@ -11,7 +11,7 @@ import { TableService } from '../service/table.service';
   styleUrls: ['./searchbar.component.css']
 })
 export class SearchbarComponent {
-  filterName!: string;
+  filterName: string = '';
 
   constructor(
     private matIconRegistry: MatIconRegistry,
@@ -30,5 +30,8 @@ export class SearchbarComponent {
   
   clear(){
   this.filterName = '';
+  }
+  filterNameChange(){
+    this.tableSevice.filterName.next(this.filterName)
   }
 }

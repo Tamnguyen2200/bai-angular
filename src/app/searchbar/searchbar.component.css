@@ -1,26 +1,10 @@
-.search{
-    font-family: 'Mulish';
-    margin-top: 25px;
-}
-.describe{
-    display: flex;
-}
-.describe p{
-    font-weight: 700;
-}
-.describe .padding8px{
-    padding: 0 32px 0 8px;
-    color: #5A6276;
-    width: 10rem;
-}
-.describe .fonts{
-    color: #959DB3;
-}
+
 .searchbar{
     margin-top: 5px;
     margin-left: 30px;
     align-items: center;
     display: flex;
+    font-family: 'Mulish';
 }
 .searchbar a{
     color: #008000;
@@ -34,6 +18,7 @@ input[type='text']{
     border-radius: 5px;
     padding-left: 35px;
     position: relative;
+
 }
 input[type=text]:focus {
     border: 2px solid #008000;

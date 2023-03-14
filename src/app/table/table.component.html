@@ -5,7 +5,7 @@
         <th class="fonttext">Mô tả</th>
         <th > </th>
     </tr>
-    <tr *ngFor="let data of listdata | appFilter: tableService.filterName" class="back-White">
+    <tr *ngFor="let data of listdata" class="back-White">
         <th class="fonttext data">{{data.reportId}}</th>
         <th id="name">{{data.reportName}}</th>
         <th class="fonttext data fontweight">{{data.reportDecription}}</th>
@@ -25,5 +25,5 @@
         </th>
     </tr>
 </table>
-<app-dialog *ngIf="dialogService.isdisplay" ></app-dialog>
+
 

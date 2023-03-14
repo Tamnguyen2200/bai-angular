@@ -1,24 +1,24 @@
 import { Injectable } from '@angular/core';
 import { data } from '../common/data';
 import { Listdata } from '../common/listdata';
-import { Observable, of } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TableService {
-  filterName!: string;
   constructor() { }
-  
+  filterName = new Subject<any>();
   getlistdat(): data[]{
     return Listdata;
   }
   clear(){
-    this.filterName = '';
+    // this.filterName = '';
   }
   search(){
-    this.filterName = '';
+    // this.filterName = '';
     Listdata
-    console.log("ok")
+    console.log()
   }
+  
 }

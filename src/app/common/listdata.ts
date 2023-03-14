@@ -42,3 +42,7 @@ export const Listdata: data[] = [
         reportDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
     }
 ]
+export function pagi(filter: any){
+    var item = Listdata
+    if(filter != '') item = item.filter((item) => item.reportName.includes(filter) || item.reportDecription.includes(filter))
+}

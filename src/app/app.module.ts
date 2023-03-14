@@ -16,6 +16,8 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { AppRoutingModule } from './Route/app-routing.module';
 import { ImportPageComponent } from './import-page/import-page.component';
 import { ReportPageComponent } from './report-page/report-page.component';
+import { ExportEXlsComponent } from './export-exls/export-exls.component';
+import { ImportEXlsComponent } from './import-exls/import-exls.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ReportPageComponent } from './report-page/report-page.component';
     DialogComponent,
     FilterPipe,
     ImportPageComponent,
-    ReportPageComponent
+    ReportPageComponent,
+    ExportEXlsComponent,
+    ImportEXlsComponent
   ],
   imports: [
     BrowserModule,
