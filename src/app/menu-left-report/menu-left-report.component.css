@@ -1,21 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-.left-side{
-    background-color:  #5A6276;
-    color: #ffffff;
-    font-family: 'Mulish';
-    min-height: 750px;
-    min-width: 280px;
-    padding-top: 55px;
-}
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
 .option{
     display: flex;
     align-items: center;
@@ -37,8 +19,4 @@ a{
 }
 .box{
     margin-left: 22px;
-}
-.lin1px{
-    border: 1px solid #FFFFFF;
-    opacity: 0.3;
 }

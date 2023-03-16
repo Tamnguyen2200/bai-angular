@@ -1,0 +1,7 @@
+
+<div class="searchbar">
+    <a (click)="Reset()">Reset bộ lọc</a> 
+    <input type="text" autocomplete="off" placeholder="Tìm theo tên đối tượng import, mô tả"[(ngModel)]="filterName" name="filterName">
+    <mat-icon class="position" svgIcon="Search_icon"></mat-icon>
+    <button  (click)="ShareValue()"><mat-icon svgIcon="Search_icon_white"></mat-icon> Tìm</button>
+</div>

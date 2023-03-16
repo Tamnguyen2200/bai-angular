@@ -18,6 +18,10 @@ import { ImportPageComponent } from './import-page/import-page.component';
 import { ReportPageComponent } from './report-page/report-page.component';
 import { ExportEXlsComponent } from './export-exls/export-exls.component';
 import { ImportEXlsComponent } from './import-exls/import-exls.component';
+import { ImportSearchBarComponent } from './import-search-bar/import-search-bar.component';
+import { MenuLeftReportComponent } from './menu-left-report/menu-left-report.component';
+import { MenuLeftImportComponent } from './menu-left-import/menu-left-import.component';
+import { TableImportComponent } from './table-import/table-import.component';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { ImportEXlsComponent } from './import-exls/import-exls.component';
     ImportPageComponent,
     ReportPageComponent,
     ExportEXlsComponent,
-    ImportEXlsComponent
+    ImportEXlsComponent,
+    ImportSearchBarComponent,
+    MenuLeftReportComponent,
+    MenuLeftImportComponent,
+    TableImportComponent
   ],
   imports: [
     BrowserModule,

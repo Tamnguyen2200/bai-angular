@@ -2,13 +2,15 @@
     min-width: 1225px;
 }
 .line{
-    min-width: 1200px;
+    min-width: 1225px;
     border: 1px solid #BDC2D2;
     margin-top: 12px;
 }
 .search{
     font-family: 'Mulish';
-    margin-top: 25px;
+    padding-top: 25px;
+    position: fixed;
+    background-color: #EDEFF3;
 }
 .describe{
     display: flex;
@@ -23,4 +25,10 @@
 }
 .describe .fonts{
     color: #959DB3;
+}
+.fixtable{
+    margin-top: 100px;
+    position: absolute;
+    z-index: -5;
+    min-width: 1225px;
 }

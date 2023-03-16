@@ -1,0 +1,26 @@
+.custombtn{
+    border: none;
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.custombtn:hover{
+    cursor: pointer;
+}
+.pa{
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* align-content: center; */
+    justify-content: space-around;
+}
+.ba{
+    padding-right: 8px;
+}
+.six{
+    width: 115px;
+    text-align: start;
+}

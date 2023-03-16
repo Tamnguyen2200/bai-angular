@@ -1,9 +1,10 @@
 import { data } from "./data";
+import { dataImport } from "./data"
 
 export const Listdata: data[] = [
     {
         reportId: 'P001',
-        reportName: 'Cập nhật thông tin hàng hóa',
+        reportName: 'Cập nhât danh mục tag',
         reportDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
     },
     {
@@ -41,8 +42,72 @@ export const Listdata: data[] = [
         reportName: 'Báo cáo bán lẻ - online',
         reportDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
     }
+];
+export const listImport: dataImport[] = [
+    {
+        importId: 'P001',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P002',
+        importName: 'Cập nhật thông tin hàng hóa',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P003',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P004',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P005',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P006',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P007',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P008',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P009',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P0010',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P0011',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P0012',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    {
+        importId: 'P0013',
+        importName: 'Cập nhât danh mục tag',
+        importDecription: 'Cập nhật những dữ liệu liên quan tới thông tin hàng hóa để hiển thị trên hệ thống và website'
+    },
+    
 ]
-export function pagi(filter: any){
-    var item = Listdata
-    if(filter != '') item = item.filter((item) => item.reportName.includes(filter) || item.reportDecription.includes(filter))
-}

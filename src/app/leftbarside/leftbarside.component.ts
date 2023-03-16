@@ -18,4 +18,10 @@ export class LeftbarsideComponent {
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/SVGimg/Path21.svg')
     )
   }
+  isdisplay: boolean = false;
+  isdisplaychange:boolean = true;
+  change(){
+    this.isdisplay = !this.isdisplay
+    this.isdisplaychange = !this.isdisplaychange
+  }
 }

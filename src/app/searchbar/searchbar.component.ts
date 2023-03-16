@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 
 import { data } from '../common/data';
 import { TableService } from '../service/table.service';
+
 
 @Component({
   selector: 'app-searchbar',
@@ -12,11 +13,10 @@ import { TableService } from '../service/table.service';
 })
 export class SearchbarComponent {
   filterName: string = '';
-
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
-    public tableSevice: TableService
+    public tableService: TableService,
   ){
     this.matIconRegistry.addSvgIcon(
       'fillter',
@@ -27,11 +27,12 @@ export class SearchbarComponent {
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/SVGimg/Search_icon_white.svg')
     )
   }
-  
-  clear(){
-  this.filterName = '';
+  ShareValue(){
+    this.tableService.shareData.next(this.filterName);
   }
-  filterNameChange(){
-    this.tableSevice.filterName.next(this.filterName)
+  Reset(){
+    this.filterName = ''
+    this.tableService.clearData.next([true,false]);
+    this.tableService.dataReset.next('');
   }
 }

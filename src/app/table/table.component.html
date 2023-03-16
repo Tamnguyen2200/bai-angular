@@ -14,12 +14,7 @@
                 <input type="checkbox" class="checkbox" name="" id="{{data.reportId}}">
                 <div class="tick_doticon">
                     <i class="fa-solid fa-ellipsis custom"></i>
-                    <div class="">
-                        <div class="box-item">
-                            <mat-icon svgIcon="xlsx"></mat-icon>
-                            <button class="custombtn" (click)="dialogService.OpenDialog(false)">Xuất ra Excel</button> 
-                        </div>
-                    </div>  
+                    <app-export-exls class="box-item"></app-export-exls>
                 </div>
             </label>
         </th>

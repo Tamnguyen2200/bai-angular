@@ -1,15 +1,17 @@
 <div class="left-side">
+    <div class="lin1px"></div>
     <a routerLink="/reportPage">
-        <div class="option topborder colorDrak">
-            <div class="line-white"></div>
+        <app-menu-left-report *ngIf="isdisplaychange"></app-menu-left-report>
+        <div class="option box" (click)="change()" *ngIf="isdisplay">
             <mat-icon svgIcon="Path21"></mat-icon>
             <p class="pading16px">Danh sách báo cáo Excel</p>
         </div>
     </a>
     <a routerLink="/importPage">
-        <div class="option box">
+        <app-menu-left-import *ngIf="isdisplay"></app-menu-left-import>
+        <div class="option box" (click)="change()" *ngIf="isdisplaychange">
             <mat-icon svgIcon="Path21"></mat-icon>
             <p class="pading16px">Import Excel</p>
         </div>
     </a>
-</div>
+</div> 

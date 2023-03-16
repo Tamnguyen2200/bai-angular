@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DialogService } from '../service/dialog.service';
 
 @Component({
   selector: 'app-export-exls',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./export-exls.component.css']
 })
 export class ExportEXlsComponent {
-
+  constructor(public dialogService: DialogService,){}
 }

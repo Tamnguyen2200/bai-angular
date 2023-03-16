@@ -1,7 +1,7 @@
 
 <div class="searchbar">
-    <a (click) = "tableSevice.clear()">Reset bộ lọc</a> 
-    <input type="text" placeholder="Tìm theo tên báo cáo, mô tả báo cáo" (change)="filterNameChange()" [(ngModel)]="filterName" name="filterName">
+    <a (click)="Reset()">Reset bộ lọc</a> 
+    <input type="text" autocomplete="off" placeholder="Tìm theo tên báo cáo, mô tả báo cáo" [(ngModel)]="filterName" name="filterName">
     <mat-icon class="position" svgIcon="Search_icon"></mat-icon>
-    <button (click)="tableSevice.search()"><mat-icon svgIcon="Search_icon_white"></mat-icon> Tìm</button>
+    <button (click)="ShareValue()"><mat-icon svgIcon="Search_icon_white"></mat-icon> Tìm</button>
 </div>

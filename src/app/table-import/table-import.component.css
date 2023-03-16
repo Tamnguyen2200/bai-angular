@@ -38,12 +38,12 @@ table, th, td{
 
 .box-item{
     position: absolute;
-    width: 150px;
+    width: 200px;
     padding: 10px;
     background-color: #BDC2D2;
     color: #ffffff;
     align-items: center;
-    margin-left: -115px;
+    margin-left: -165px;
     z-index: 1;
     display: flex;
     margin-top: -5px;
@@ -91,7 +91,4 @@ table, th, td{
     background-color: #ffffff00;
     color: #ffffff;
     font-weight: 400;
-}
-.custom:hover{
-    cursor: pointer;
 }

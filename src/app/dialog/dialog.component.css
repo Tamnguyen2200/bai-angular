@@ -99,3 +99,6 @@ input[type='number']{
 .pading{
     margin-left: 128px;
 }
+.custonbtm:hover{
+    cursor: pointer;
+}

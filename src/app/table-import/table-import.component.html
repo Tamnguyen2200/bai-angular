@@ -1,0 +1,26 @@
+<table id="List_report">
+    <tr>
+        <th class="fonttext">Mã</th>
+        <th class="fonttext">Tên đối báo cáo</th>
+        <th class="fonttext">Mô tả</th>
+        <th > </th>
+    </tr>
+    <tr *ngFor="let dataImport of listData" class="back-White">
+        <th class="fonttext data">{{dataImport.importId}}</th>
+        <th id="name">{{dataImport.importName}}</th>
+        <th class="fonttext data fontweight">{{dataImport.importDecription}}</th>
+        <th class="Event">
+            <label for="{{dataImport.importId}}"  class="option_item">
+                <input type="checkbox" class="checkbox" name="" id="{{dataImport.importId}}">
+                <div class="tick_doticon">
+                    <i class="fa-solid fa-ellipsis custom"></i>
+                    <div class="">
+                        <app-import-exls class="box-item"></app-import-exls>
+                    </div>  
+                </div>
+            </label>
+        </th>
+    </tr>
+</table>
+
+

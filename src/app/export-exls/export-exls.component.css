@@ -1,0 +1,9 @@
+.custombtn{
+    border: none;
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-weight: 400;
+}
+.custombtn:hover{
+    cursor: pointer;
+}
